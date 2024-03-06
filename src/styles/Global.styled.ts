@@ -1,5 +1,5 @@
-import {createGlobalStyle} from 'styled-components';
-import {theme} from './Theme';
+import { createGlobalStyle } from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyle = createGlobalStyle`
 	*,
@@ -41,6 +41,10 @@ export const GlobalStyle = createGlobalStyle`
 
 	section {
 		padding: 100px 0;
+
+		@media ${theme.media.mobile} {
+			padding: 80px 0;
+		}
 	}
 
 	section:nth-of-type(odd) {
@@ -64,4 +68,4 @@ export const GlobalStyle = createGlobalStyle`
 		line-height: 1.4;
 	}
 
-`
+`;
