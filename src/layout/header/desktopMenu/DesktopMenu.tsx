@@ -1,30 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 import {theme} from '../../../styles/Theme';
+import {Menu} from '../menu/Menu';
 
 
-export const HeaderMenu = (props: { menuItems: Array<string> }) => {
+export const DesktopMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
 	return (
-			<StyledHeaderMenu>
-				<ul>
-					{props.menuItems.map((item, index) => {
-						return <ListItem key={index}>
-							<Link href="">{item}
-								<Mask>
-									<span>{item}</span>
-								</Mask>
-								<Mask>
-									<span>{item}</span>
-								</Mask>
-							</Link>
-						</ListItem>
-					})}
-				</ul>
-			</StyledHeaderMenu>
+			<StyledDesktopMenu>
+
+				<Menu menuItems={props.menuItems}/>
+				{/*<ul>*/}
+				{/*	{props.menuItems.map((item, index) => {*/}
+				{/*		return <ListItem key={index}>*/}
+				{/*			<Link href="">{item}*/}
+				{/*				<Mask>*/}
+				{/*					<span>{item}</span>*/}
+				{/*				</Mask>*/}
+				{/*				<Mask>*/}
+				{/*					<span>{item}</span>*/}
+				{/*				</Mask>*/}
+				{/*			</Link>*/}
+				{/*		</ListItem>*/}
+				{/*	})}*/}
+				{/*</ul>*/}
+			</StyledDesktopMenu>
 	);
 };
 
-const StyledHeaderMenu = styled.nav`
+const StyledDesktopMenu = styled.nav`
 	ul {
 		display: flex;
 		gap: 30px;
