@@ -28,6 +28,6 @@ const StyledTestimony = styled.section`
 	background-color: #a3f1f3;
 
 	${IconWrapper} {
-		margin: 40px 0 70px;
+		margin: 28px 0 72px;
 	}
 `;
