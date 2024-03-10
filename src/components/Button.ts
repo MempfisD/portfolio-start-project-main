@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {theme} from '../styles/Theme';
+import { theme } from '../styles/Theme';
 
 export const Button = styled.button`
 	font-size: 14px;
@@ -16,7 +16,6 @@ export const Button = styled.button`
 		&::before {
 			width: 100%;
 			height: 100%;
-
 		}
 	}
 
@@ -34,4 +33,4 @@ export const Button = styled.button`
 
 		background-color: ${theme.colors.accentBg};
 	}
-`
+`;
