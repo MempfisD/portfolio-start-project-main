@@ -32,5 +32,6 @@ export const Button = styled.button`
 		z-index: -1;
 
 		background-color: ${theme.colors.accentBg};
+		transition: ${theme.animation.transition};
 	}
 `;

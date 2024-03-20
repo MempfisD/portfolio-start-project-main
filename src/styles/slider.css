@@ -8,6 +8,7 @@
 	width: 7px;
 	height: 7px;
 	background-color: rgba(255, 255, 255, 0.5);
+	transition: 0.2s ease-in-out;
 }
 
 .alice-carousel__dots-item:not(.__custom):not(:last-child) {
@@ -15,7 +16,7 @@
 }
 
 .alice-carousel__dots-item:not(.__custom):hover {
-	background-color: #7572D5;
+	background-color: #7572d5;
 }
 
 .alice-carousel__dots-item:not(.__custom).__active {
